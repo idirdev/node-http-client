@@ -1,0 +1,19 @@
+{
+  "name": "@idirdev/node-http-client",
+  "version": "1.0.0",
+  "description": "Lightweight HTTP client with interceptors, retries, and exponential backoff.",
+  "main": "src/index.js",
+  "author": "idirdev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idirdev/node-http-client.git"
+  },
+  "keywords": [],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "node --test tests/"
+  }
+}
