@@ -1,0 +1,42 @@
+{
+  "name": "node-http-client",
+  "version": "1.0.0",
+  "description": "A lightweight HTTP client library for Node.js with interceptors, retry, and caching",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest --coverage",
+    "lint": "tslint -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "http",
+    "client",
+    "request",
+    "node",
+    "interceptors",
+    "retry",
+    "cache"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^10.12.0",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
