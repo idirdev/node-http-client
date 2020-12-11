@@ -40,4 +40,6 @@ export type {
   QueryParams,
   RetryOptions,
   CacheOptions,
+  HttpClientInterface,
+  Interceptor,
 };
