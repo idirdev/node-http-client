@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "test": "jest --coverage",
+    "test": "vitest run",
     "lint": "tslint -p tsconfig.json",
     "prepublishOnly": "npm run build"
   },
@@ -30,7 +30,8 @@
     "jest": "^23.6.0",
     "ts-jest": "^23.10.0",
     "tslint": "^5.11.0",
-    "typescript": "^3.1.0"
+    "typescript": "^3.1.0",
+    "vitest": "^2.0.0"
   },
   "engines": {
     "node": ">=8.0.0"
