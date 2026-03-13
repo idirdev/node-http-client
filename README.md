@@ -194,3 +194,35 @@ try {
 ## License
 
 MIT
+
+---
+
+## 🇫🇷 Documentation en français
+
+### Description
+`node-http-client` est une bibliothèque cliente HTTP légère et sans dépendances pour Node.js, construite sur les modules natifs `http` et `https`. Elle offre une API basée sur les promesses avec intercepteurs, retry automatique avec backoff exponentiel, mise en cache des réponses et support du streaming.
+
+### Installation
+```bash
+npm install node-http-client
+```
+
+### Utilisation
+```ts
+import client, { createClient } from 'node-http-client';
+
+// Utilisation du client par défaut
+const response = await client.get('https://jsonplaceholder.typicode.com/posts/1');
+console.log(response.data);
+
+// Création d'une instance configurée
+const api = createClient({
+  baseURL: 'https://api.example.com/v1',
+  timeout: 5000,
+  headers: { 'authorization': 'Bearer mon-token' },
+});
+
+const users = await api.get('/users');
+```
+
+Consultez la documentation anglaise ci-dessus pour la référence complète de l'API, les intercepteurs, le middleware de retry et la gestion du cache.
