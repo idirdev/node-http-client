@@ -3,9 +3,11 @@ import { Headers, QueryParams, RequestConfig, ClientConfig } from './types';
 
 /**
  * Check if a URL is absolute (starts with http:// or https:// or //)
+ * Note: triple-slash paths like ///path are NOT protocol-relative URLs.
+ * A protocol-relative URL must have a non-slash character immediately after //.
  */
 export function isAbsoluteURL(urlStr: string): boolean {
-  return /^https?:\/\//i.test(urlStr) || urlStr.startsWith('//');
+  return /^https?:\/\//i.test(urlStr) || /^\/\/[^/]/.test(urlStr);
 }
 
 /**
